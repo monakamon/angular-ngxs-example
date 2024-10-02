@@ -97,7 +97,11 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "angular-ngxs-example:build:production",
+            "repo": "https://github.com/monakamon/angular-ngxs-example.git"
+          }
         }
       }
     }
